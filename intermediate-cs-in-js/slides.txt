@@ -1,0 +1,97 @@
+intermediate cs concepts in javascript
+
+- typescript
+- useful syntax
+- (a slight digression)
+- prototypes & classes
+- scopes & closures
+
+⇒ javascript
+
+js began as tiny snippets that could run in the browser
+now it is everywhere all the time
+
+⇒ typescript
+
+fixing javascript (kind of)
+
+typescript introduces static typing to JS
+this is useful for code readability, which improves maintainability
+compile-time error checking also improves productivity
+
+⇒ some neat syntax
+
+template literals
+``
+
+before:
+const firstName = 'Owen'
+const lastName = 'Arthur'
+const error = 'stack overflow'
+
+before:
+const firstName = 'Owen'
+const lastName = 'Arthur'
+const error = 'stack overflow'
+console.log('User ' + firstName + ' ' + lastName + ' saw error ' + error)
+
+after:
+console.log(`User ${firstName} ${lastName} saw error ${error}`)
+
+after:
+console.log(`User ${firstName} ${lastName} saw error ${error}`)
+:)
+
+
+the spread operator:
+...
+
+const copy = [...original]
+const copy = {...original}
+
+try / catch
+
+try {
+  runSomeCodeThatMightCrash()
+} catch (error) {
+  console.log(`What crashed?: ${error}`)
+}
+
+⇒ a slight digression for a very useful concept
+
+⇒ the stack and the heap
+
+the stack stores
+- primitive types
+- references to non-primitives
+- function calls
+
+the heap stores
+- objects and arrays
+
+the stack is fast and is managed by the cpu
+the heap is large and managed by the garbage collector
+
+⇒ prototypes
+
+"everything in javascript is an object"
+
+⇒ classes
+
+- a blueprint for creating objects
+- encapsulate data and functionality
+
+⇒ scopes
+
+where is a variable visible?
+
+⇒ closures
+
+access to the outer scope, even later
+
+
+- typescript
+- useful syntax
+- (a slight digression)
+- prototypes & classes
+- scopes & closures
